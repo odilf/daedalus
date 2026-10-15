@@ -1,14 +1,25 @@
 # daedalus
-A game about a labyrinth in x86 assembly
+A game about a labyrinth in x86 assembly.
 
-In private repo because this is only to manage versions and colaborate. 
-Maybe I'll make it public after the course is done. 
+Made for CSE1400 Computer Organization, won the "assembly game contest" on the 2022 edition.
+
+Learn more about how it was built by reading the short [spec](./spec.md).
+
+## Demo video
+
+Here's a demo recording (spoilers! technically).
+
+https://github.com/user-attachments/assets/a3597e08-89fd-4d94-8868-c634adf8101d
+
+
+
+I recorded this 4 years after finishing the project, so this is a genuine run because didn't remember the maze layout :)
 
 ## Running
 
-This only runs on Linux x86-64. It uses make and GCC. 
+This only runs on x86-64 Linux. 
 
-If you have linux, just run
+If you're on Linux, you just need `gcc`, `make` and run
 
 ```bash
 make
@@ -21,9 +32,5 @@ make
 2. Run `sudo apt-get gcc` and `sudo apt-get make`
 3. Run `make` on the directory
 
-**MacOS**: This is harder, especially on M1 macs. I used Lima, but maybe Docker can work too. But I can't be bothered to write step by step instructions so you're on your own lol
+**MacOS**: Apple silicon can't execute x86 natively, so some virtualization layer is needed. I used Lima, but Docker could work too. Once on Linux, follow the above instructions.
 
-
-## More info
-
-There is a specification available at [[Spec.md]]
